@@ -30,7 +30,7 @@ class Node:
         return self.g_tree_address
 
     def print_label_node(self):
-        print(f",{self.label}", end='')
+        print(f"{self.label}", end='')
 
     def preorder(self):
         self.print_label_node()
@@ -72,8 +72,8 @@ class GTree:
         print("\n---------------------------------------")
 
     def parent(self, n, root):
-        if self == root:
-            print("\nRoot has no parent")
+        if n == root:
+            print("No parent found")
             return None
         else:
             p = self.root_p()
@@ -91,22 +91,14 @@ class GTree:
 
 
 def parenthood(a, root):
-    print("\nParent(", end='')
+    print("\nParent ", end='')
     a.root_p().print_label_node()
-    print(")=", end='')
+    print(" = ", end='')
     root.parent(a, root).print_label_node()
     print()
 
 
-def proper_ancestor_list(n, root):
-    print("\nproper ancestor list(", end='')
-    n.root_p().print_label_node()
-    print("):", end='')
-    p = n
-    while p != root:
-        root.parent(p, root).print_label_node()
-        p = root.parent(p, root).g_tree_address_val()
-    print("\n")
+
 
 
 if __name__ == "__main__":
@@ -131,6 +123,7 @@ if __name__ == "__main__":
     parenthood(t2, t4)
     parenthood(t22, t4)
     parenthood(t21, t4)
+
 
 
 
