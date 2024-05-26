@@ -127,7 +127,11 @@ if __name__ == "__main__":
 
     t4.preorder()
     t4.postorder()
-    t4.parent()
+    parenthood(t3, t4)
+    parenthood(t2, t4)
+    parenthood(t22, t4)
+    parenthood(t21, t4)
+
 
 
 
