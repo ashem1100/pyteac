@@ -117,6 +117,7 @@ if __name__ == "__main__":
     t4 = GTree()
     t4.create(3, g_table2, 'D')
 
+
     t4.preorder()
     t4.postorder()
     parenthood(t3, t4)
