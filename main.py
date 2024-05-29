@@ -95,7 +95,6 @@ def parenthood(a, root):
     a.root_p().print_label_node()
     print(" = ", end='')
     root.parent(a, root).print_label_node()
-    print()
 
 
 
@@ -122,9 +121,6 @@ if __name__ == "__main__":
     t4.postorder()
     parenthood(t3, t4)
     parenthood(t2, t4)
-    parenthood(t22, t4)
-    parenthood(t21, t4)
-
 
 
 
