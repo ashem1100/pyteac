@@ -121,6 +121,9 @@ if __name__ == "__main__":
     t4.postorder()
     parenthood(t3, t4)
     parenthood(t2, t4)
+    parenthood(t22, t4)
+    parenthood(t21, t4)
+
 
 
 
