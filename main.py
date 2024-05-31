@@ -1,3 +1,3 @@
-students = ["a","b","c","d","e","f","g","h","i","j"]
-for student  in students:
-    print(student)
+indx = input("Enter a name:")
+list = [char for char in indx]
+print(list)
