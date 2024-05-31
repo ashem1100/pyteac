@@ -1,1 +1,3 @@
-#don't use this file now
+i=4
+list=["a","b","V","D"]
+list.insert(i,"_")
