@@ -5,6 +5,7 @@ i=0
 while i < len(list):
     if list[i] in "ABCDEFGHIJKMLNOPQRSTUVWSYZ":
         list.insert(i,"_")
+        i+=1
 
 
 
