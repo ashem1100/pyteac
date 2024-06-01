@@ -1,16 +1,15 @@
-indx = input("Enter a name:")
-list = [char for char in indx]
+indx = input("Insert Coin: ")
 
-i=0
-while i < len(list):
-    if list[i] in "ABCDEFGHIJKMLNOPQRSTUVWSYZ":
-        list.insert(i,"_")
-        i+=1
+fe =50
 
+while fe != 0:
+    if int(indx) == 5:
+        fe=45
+    elif int(indx) ==10:
+        fe = 40
+    elif int(indx) == 25:
+        fe = 25
+    else:
+        fe = 50
 
-
-    i+=1
-
-str="".join(list)
-result = str.lower()
-print(result)
+print("Amount Due: " + str(fe))
