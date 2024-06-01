@@ -1,15 +1,17 @@
-indx = input("Insert Coin: ")
 
 fe =50
 
-while fe != 0:
-    if int(indx) == 5:
-        fe=45
-    elif int(indx) ==10:
-        fe = 40
-    elif int(indx) == 25:
-        fe = 25
-    else:
-        fe = 50
+while fe>0:
+    indx = input("Insert Coin: ")
 
-print("Amount Due: " + str(fe))
+    if indx in ("5","10","25"):
+
+        fe -= int(indx)
+        if fe >= 0:
+            print("Amount Due: "+ str(fe))
+        elif fe <0:
+            print("Change Owed: "+ str(fe*(-1)))
+
+    else:
+        print(fe)
+        continue
