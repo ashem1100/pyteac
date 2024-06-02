@@ -1,17 +1,16 @@
+indx = input().strip()
+list=[char for char in indx]
+i=0
 
-fe =50
+while i<=len(list):
+  if list[i] in ("ioeauIOEAU"):
+    list.remove(list[i])
+    i=i+1
+  else:
+    i=i+1
 
-while fe>0:
-    indx = input("Insert Coin: ")
 
-    if indx in ("5","10","25"):
 
-        fe -= int(indx)
-        if fe >= 0:
-            print("Amount Due: "+ str(fe))
-        elif fe <0:
-            print("Change Owed: "+ str(fe*(-1)))
+result = "".join(list)
 
-    else:
-        print(fe)
-        continue
+print(result)
